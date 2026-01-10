@@ -45,7 +45,7 @@
 			name: 'Manufacturing',
 			description: 'Cost accounting, job costing, and financial management for manufacturers.',
 			services: ['Cost Accounting', 'Job Costing', 'Inventory Valuation', 'Equipment Depreciation'],
-			imageUrl: 'https://images.unsplash.com/photo-1565620731358-e8c038abc8a4?w=600'
+			imageUrl: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600'
 		},
 		{
 			icon: Home,
