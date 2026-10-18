@@ -1,68 +1,26 @@
-name: CI/CD Pipeline
-
+name: Validate template
 on:
   push:
     branches: [main]
   pull_request:
-    branches: [main]
-
-env:
-  NODE_VERSION: '20'
-
+permissions:
+  contents: read
+concurrency:
+  group: template-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
-  lint-and-test:
-    name: Lint & Test
+  validate:
     runs-on: ubuntu-latest
-
+    timeout-minutes: 15
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
-          version: 9
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-          cache: 'pnpm'
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: Run linter
-        run: pnpm lint || true
-
-      - name: Run type check
-        run: pnpm check || true
-
-  build:
-    name: Build
-    runs-on: ubuntu-latest
-    needs: lint-and-test
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: 9
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-          cache: 'pnpm'
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: Build application
-        run: pnpm build
-
-# Built with love by CoCoding AI Team
-# https://cocoding.ai
+          node-version: '24'
+      - run: npm install --global pnpm@10.33.0 --ignore-scripts
+      - run: pnpm install --frozen-lockfile --ignore-scripts
+      - run: pnpm check
+      - run: pnpm build
+        env:
+          COCODING_TEMPLATE_BASE: /previews/svelte-accounting-cpa
+      - run: pnpm audit --audit-level=low

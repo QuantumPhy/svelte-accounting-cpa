@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { templateHref } from '$lib/preview-path';
+	import { base } from '$app/paths';
 	import { Button } from '$lib/components/ui/button';
 	import * as Card from '$lib/components/ui/card';
 	import TaxDeadlineCard from '$lib/components/TaxDeadlineCard.svelte';
@@ -138,7 +140,7 @@
 			<p class="text-xl text-background/80 mb-8">
 				Stay informed with important tax deadlines, helpful resources, and the latest tax news to keep you prepared year-round.
 			</p>
-			<Button size="lg" class="gold-gradient text-white hover:opacity-90" href="/contact">
+			<Button size="lg" class="gold-gradient text-white hover:opacity-90" href={base + "/contact"}>
 				Schedule Tax Consultation
 				<ArrowRight class="ml-2 h-5 w-5" />
 			</Button>
@@ -249,7 +251,7 @@
 
 		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
 			{#each externalLinks as link}
-				<a href={link.href} target="_blank" rel="noopener noreferrer" class="p-4 bg-background rounded-xl hover:shadow-md transition-all group">
+				<a href={templateHref(link.href)} target="_blank" rel="noopener noreferrer" class="p-4 bg-background rounded-xl hover:shadow-md transition-all group">
 					<div class="flex items-center justify-between mb-2">
 						<h3 class="font-semibold text-foreground group-hover:text-primary transition-colors">{link.name}</h3>
 						<ExternalLink class="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
@@ -271,7 +273,7 @@
 			Our experienced tax professionals are ready to help you navigate complex tax situations and maximize your savings.
 		</p>
 		<div class="flex flex-col sm:flex-row gap-4 justify-center">
-			<Button size="lg" class="bg-white text-primary hover:bg-white/90" href="/contact">
+			<Button size="lg" class="bg-white text-primary hover:bg-white/90" href={base + "/contact"}>
 				Get Started Today
 			</Button>
 			<Button size="lg" variant="outline" class="border-white/30 text-white hover:bg-white/10" href="tel:555-234-8200">

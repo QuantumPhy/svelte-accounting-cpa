@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { Button } from '$lib/components/ui/button';
 	import * as Card from '$lib/components/ui/card';
 	import {
@@ -126,7 +127,7 @@
 			<p class="text-xl text-background/80 mb-8">
 				Every industry has unique accounting challenges. Our specialized teams bring deep knowledge of your sector's specific requirements, regulations, and opportunities.
 			</p>
-			<Button size="lg" class="gold-gradient text-white hover:opacity-90" href="/contact">
+			<Button size="lg" class="gold-gradient text-white hover:opacity-90" href={base + "/contact"}>
 				Discuss Your Industry Needs
 				<ArrowRight class="ml-2 h-5 w-5" />
 			</Button>
@@ -171,7 +172,7 @@
 					</Card.Content>
 
 					<Card.Footer class="px-6 pb-6 pt-0">
-						<Button variant="outline" class="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground" href="/contact">
+						<Button variant="outline" class="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground" href={base + "/contact"}>
 							Learn More
 							<ArrowRight class="ml-2 h-4 w-4" />
 						</Button>
@@ -192,10 +193,10 @@
 			We work with businesses across all sectors. Contact us to discuss how our expertise can benefit your specific situation.
 		</p>
 		<div class="flex flex-col sm:flex-row gap-4 justify-center">
-			<Button size="lg" class="bg-white text-primary hover:bg-white/90" href="/contact">
+			<Button size="lg" class="bg-white text-primary hover:bg-white/90" href={base + "/contact"}>
 				Contact Us Today
 			</Button>
-			<Button size="lg" variant="outline" class="border-white/30 text-white hover:bg-white/10" href="/services">
+			<Button size="lg" variant="outline" class="border-white/30 text-white hover:bg-white/10" href={base + "/services"}>
 				View All Services
 			</Button>
 		</div>

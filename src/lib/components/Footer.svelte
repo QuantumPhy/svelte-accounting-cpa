@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { Calculator, Phone, Mail, MapPin, Clock, Linkedin, Facebook, Award, ShieldCheck, Calendar } from 'lucide-svelte';
 </script>
 
@@ -18,7 +19,7 @@
 		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
 			<!-- Brand -->
 			<div class="space-y-4">
-				<a href="/" class="flex items-center gap-3">
+				<a href={base + "/"} class="flex items-center gap-3">
 					<div class="bg-gradient-to-br from-primary to-primary/80 p-2 rounded-xl">
 						<Calculator class="h-8 w-8 text-white" />
 					</div>
@@ -56,32 +57,32 @@
 				<h3 class="text-lg font-semibold mb-4 text-white">Our Services</h3>
 				<ul class="space-y-3">
 					<li>
-						<a href="/services" class="text-background/70 hover:text-accent transition-colors text-sm">
+						<a href={base + "/services"} class="text-background/70 hover:text-accent transition-colors text-sm">
 							Tax Preparation & Planning
 						</a>
 					</li>
 					<li>
-						<a href="/services" class="text-background/70 hover:text-accent transition-colors text-sm">
+						<a href={base + "/services"} class="text-background/70 hover:text-accent transition-colors text-sm">
 							Bookkeeping Services
 						</a>
 					</li>
 					<li>
-						<a href="/services" class="text-background/70 hover:text-accent transition-colors text-sm">
+						<a href={base + "/services"} class="text-background/70 hover:text-accent transition-colors text-sm">
 							Payroll Management
 						</a>
 					</li>
 					<li>
-						<a href="/services" class="text-background/70 hover:text-accent transition-colors text-sm">
+						<a href={base + "/services"} class="text-background/70 hover:text-accent transition-colors text-sm">
 							Audit & Assurance
 						</a>
 					</li>
 					<li>
-						<a href="/services" class="text-background/70 hover:text-accent transition-colors text-sm">
+						<a href={base + "/services"} class="text-background/70 hover:text-accent transition-colors text-sm">
 							Business Advisory
 						</a>
 					</li>
 					<li>
-						<a href="/services" class="text-background/70 hover:text-accent transition-colors text-sm">
+						<a href={base + "/services"} class="text-background/70 hover:text-accent transition-colors text-sm">
 							CFO Services
 						</a>
 					</li>
@@ -108,7 +109,7 @@
 						<p class="text-background/70 text-xs">S-Corp & Partnership Returns</p>
 					</li>
 				</ul>
-				<a href="/tax-center" class="inline-flex items-center gap-1 text-accent hover:text-accent/80 text-sm font-medium mt-3 transition-colors">
+				<a href={base + "/tax-center"} class="inline-flex items-center gap-1 text-accent hover:text-accent/80 text-sm font-medium mt-3 transition-colors">
 					View Full Calendar
 					<svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />

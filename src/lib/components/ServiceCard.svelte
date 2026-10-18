@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { templateHref } from '$lib/preview-path';
 	import * as Card from '$lib/components/ui/card';
 	import { Button } from '$lib/components/ui/button';
 	import { ChevronRight, Check } from 'lucide-svelte';
@@ -47,7 +48,7 @@
 	</Card.Content>
 
 	<Card.Footer>
-		<Button variant="outline" class="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground group/btn" href={href}>
+		<Button variant="outline" class="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground group/btn" href={templateHref(href)}>
 			Learn More
 			<ChevronRight class="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
 		</Button>

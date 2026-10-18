@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { templateHref } from '$lib/preview-path';
+	import { base } from '$app/paths';
 	import { Button } from '$lib/components/ui/button';
 	import * as Card from '$lib/components/ui/card';
 	import { Input } from '$lib/components/ui/input';
@@ -135,7 +137,7 @@
 			{#each contactInfo as info}
 				<Card.Root class="p-6 border-0 shadow-lg hover:shadow-xl transition-all group">
 					{#if info.action}
-						<a href={info.action} class="block">
+						<a href={templateHref(info.action)} class="block">
 							<div class="flex items-start gap-4">
 								<div class="w-12 h-12 rounded-xl financial-gradient flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
 									<info.icon class="h-6 w-6 text-white" />
@@ -315,7 +317,7 @@
 					<h3 class="text-lg font-semibold text-foreground mb-4">Quick Links</h3>
 					<div class="space-y-4">
 						{#each quickLinks as link}
-							<a href={link.href} class="block group">
+							<a href={templateHref(link.href)} class="block group">
 								<Card.Root class="p-4 border-0 shadow-md hover:shadow-lg transition-all">
 									<div class="flex items-center gap-4">
 										<div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">

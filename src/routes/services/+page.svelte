@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { Button } from '$lib/components/ui/button';
 	import * as Card from '$lib/components/ui/card';
 	import ServiceCard from '$lib/components/ServiceCard.svelte';
@@ -124,7 +125,7 @@
 			<p class="text-xl text-background/80 mb-8">
 				From tax preparation to strategic advisory, we provide the full spectrum of accounting services to help you achieve your financial goals.
 			</p>
-			<Button size="lg" class="gold-gradient text-white hover:opacity-90" href="/contact">
+			<Button size="lg" class="gold-gradient text-white hover:opacity-90" href={base + "/contact"}>
 				Schedule Free Consultation
 				<ArrowRight class="ml-2 h-5 w-5" />
 			</Button>
@@ -187,7 +188,7 @@
 			Let's discuss how our services can help you achieve your financial goals. Your first consultation is free.
 		</p>
 		<div class="flex flex-col sm:flex-row gap-4 justify-center">
-			<Button size="lg" class="bg-white text-primary hover:bg-white/90" href="/contact">
+			<Button size="lg" class="bg-white text-primary hover:bg-white/90" href={base + "/contact"}>
 				Get Started Today
 			</Button>
 			<Button size="lg" variant="outline" class="border-white/30 text-white hover:bg-white/10" href="tel:555-234-8200">
