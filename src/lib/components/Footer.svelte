@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import { Calculator, Phone, Mail, MapPin, Clock, Linkedin, Facebook, Award, ShieldCheck, Calendar } from 'lucide-svelte';
+	import { Calculator, Phone, Mail, MapPin, Clock, Award, ShieldCheck, Calendar } from 'lucide-svelte';
 </script>
 
 <footer class="bg-foreground text-background">
@@ -41,14 +41,6 @@
 						<ShieldCheck class="h-4 w-4 text-accent" />
 						<span class="text-xs font-medium text-background/80">QuickBooks ProAdvisor</span>
 					</div>
-				</div>
-				<div class="flex gap-4 mt-4">
-					<a href="#" class="text-background/70 hover:text-accent transition-colors">
-						<Linkedin class="h-5 w-5" />
-					</a>
-					<a href="#" class="text-background/70 hover:text-accent transition-colors">
-						<Facebook class="h-5 w-5" />
-					</a>
 				</div>
 			</div>
 
@@ -158,11 +150,6 @@
 			<p class="text-background/50 text-sm">
 				&copy; {new Date().getFullYear()} Greenfield & Associates CPA. All rights reserved.
 			</p>
-			<div class="flex gap-6 text-sm">
-				<a href="#" class="text-background/50 hover:text-accent transition-colors">Privacy Policy</a>
-				<a href="#" class="text-background/50 hover:text-accent transition-colors">Terms of Service</a>
-				<a href="#" class="text-background/50 hover:text-accent transition-colors">Client Portal</a>
-			</div>
 		</div>
 	</div>
 </footer>
