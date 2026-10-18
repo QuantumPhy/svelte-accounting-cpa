@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { Button } from '$lib/components/ui/button';
 	import TeamMemberCard from '$lib/components/TeamMemberCard.svelte';
 	import { Users, ArrowRight, Award, GraduationCap, Heart } from 'lucide-svelte';
@@ -227,7 +228,7 @@
 		<p class="text-xl text-white/80 max-w-2xl mx-auto mb-8">
 			We're always looking for talented professionals who share our values and commitment to excellence.
 		</p>
-		<Button size="lg" class="bg-white text-primary hover:bg-white/90" href="/contact">
+		<Button size="lg" class="bg-white text-primary hover:bg-white/90" href={base + "/contact"}>
 			View Open Positions
 			<ArrowRight class="ml-2 h-5 w-5" />
 		</Button>

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import * as Card from '$lib/components/ui/card';
 	import { Calendar, Clock, AlertTriangle, ChevronRight } from 'lucide-svelte';
 
@@ -72,7 +73,7 @@
 					{/if}
 				</div>
 
-				<a href="/contact" class="flex items-center gap-1 text-sm font-medium text-primary hover:text-primary/80 transition-colors">
+				<a href={base + "/contact"} class="flex items-center gap-1 text-sm font-medium text-primary hover:text-primary/80 transition-colors">
 					Get Help
 					<ChevronRight class="h-4 w-4" />
 				</a>

@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { templateHref } from '$lib/preview-path';
+	import { base } from '$app/paths';
 	import { Button } from '$lib/components/ui/button';
 	import * as Sheet from '$lib/components/ui/sheet';
 	import { Calculator, Menu, Phone, Clock, MapPin, BarChart3 } from 'lucide-svelte';
@@ -48,7 +50,7 @@
 	<div class="container mx-auto px-4">
 		<nav class="flex items-center justify-between h-16 lg:h-20">
 			<!-- Logo -->
-			<a href="/" class="flex items-center gap-3 group">
+			<a href={base + "/"} class="flex items-center gap-3 group">
 				<div class="relative">
 					<div class="absolute inset-0 bg-primary/20 rounded-full blur-lg group-hover:blur-xl transition-all"></div>
 					<div class="relative bg-gradient-to-br from-primary to-primary/80 p-2 rounded-xl">
@@ -68,7 +70,7 @@
 			<div class="hidden lg:flex items-center gap-8">
 				{#each navLinks as link}
 					<a
-						href={link.href}
+						href={templateHref(link.href)}
 						class="text-foreground/80 hover:text-primary font-medium transition-colors relative group"
 					>
 						{link.label}
@@ -107,7 +109,7 @@
 						<div class="flex flex-col gap-4 mt-8">
 							{#each navLinks as link}
 								<a
-									href={link.href}
+									href={templateHref(link.href)}
 									class="text-lg font-medium text-foreground/80 hover:text-primary transition-colors py-2 border-b border-border"
 								>
 									{link.label}

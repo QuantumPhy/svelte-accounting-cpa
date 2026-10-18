@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { Button } from '$lib/components/ui/button';
 	import * as Card from '$lib/components/ui/card';
 	import { Badge } from '$lib/components/ui/badge';
@@ -225,7 +226,7 @@
 					Comprehensive Financial Services
 				</h2>
 			</div>
-			<Button variant="outline" class="self-start lg:self-auto border-primary text-primary hover:bg-primary hover:text-primary-foreground" href="/services">
+			<Button variant="outline" class="self-start lg:self-auto border-primary text-primary hover:bg-primary hover:text-primary-foreground" href={base + "/services"}>
 				View All Services
 				<ChevronRight class="ml-2 h-4 w-4" />
 			</Button>
@@ -267,7 +268,7 @@
 		</div>
 
 		<div class="text-center mt-10">
-			<Button class="gold-gradient text-white hover:opacity-90" href="/industries">
+			<Button class="gold-gradient text-white hover:opacity-90" href={base + "/industries"}>
 				Explore All Industries
 				<ArrowRight class="ml-2 h-4 w-4" />
 			</Button>
@@ -285,7 +286,7 @@
 					Meet Our Leadership
 				</h2>
 			</div>
-			<Button variant="outline" class="self-start lg:self-auto border-primary text-primary hover:bg-primary hover:text-primary-foreground" href="/team">
+			<Button variant="outline" class="self-start lg:self-auto border-primary text-primary hover:bg-primary hover:text-primary-foreground" href={base + "/team"}>
 				View Full Team
 				<ChevronRight class="ml-2 h-4 w-4" />
 			</Button>
@@ -351,7 +352,7 @@
 					Upcoming Tax Deadlines
 				</h2>
 			</div>
-			<Button variant="outline" class="self-start lg:self-auto border-primary text-primary hover:bg-primary hover:text-primary-foreground" href="/tax-center">
+			<Button variant="outline" class="self-start lg:self-auto border-primary text-primary hover:bg-primary hover:text-primary-foreground" href={base + "/tax-center"}>
 				View Tax Center
 				<ChevronRight class="ml-2 h-4 w-4" />
 			</Button>
@@ -377,10 +378,10 @@
 			Schedule a free consultation to discuss your accounting and tax needs. Let us show you how we can help.
 		</p>
 		<div class="flex flex-col sm:flex-row gap-4 justify-center">
-			<Button size="lg" class="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6" href="/contact">
+			<Button size="lg" class="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6" href={base + "/contact"}>
 				Free Consultation
 			</Button>
-			<Button size="lg" variant="outline" class="border-white/30 text-white hover:bg-white/10 text-lg px-8 py-6" href="/services">
+			<Button size="lg" variant="outline" class="border-white/30 text-white hover:bg-white/10 text-lg px-8 py-6" href={base + "/services"}>
 				Explore Services
 			</Button>
 		</div>
