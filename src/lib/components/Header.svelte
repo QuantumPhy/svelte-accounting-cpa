@@ -81,10 +81,10 @@
 
 			<!-- CTA Button -->
 			<div class="hidden lg:flex items-center gap-4">
-				<Button variant="outline" class="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-					Client Portal
+				<Button href={base + "/contact/#client-support"} variant="outline" class="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+					Client Support
 				</Button>
-				<Button class="gold-gradient text-white hover:opacity-90">
+				<Button href={base + "/contact/#form"} class="gold-gradient text-foreground hover:opacity-90">
 					Request Quote
 				</Button>
 			</div>
@@ -94,7 +94,7 @@
 				<Sheet.Root>
 					<Sheet.Trigger>
 						{#snippet child({ props })}
-							<Button {...props} variant="ghost" size="icon">
+							<Button {...props} variant="ghost" size="icon" aria-label="Open navigation menu">
 								<Menu class="h-6 w-6" />
 							</Button>
 						{/snippet}
@@ -116,10 +116,10 @@
 								</a>
 							{/each}
 							<div class="flex flex-col gap-3 mt-4">
-								<Button variant="outline" class="w-full border-primary text-primary">
-									Client Portal
+								<Button href={base + "/contact/#client-support"} variant="outline" class="w-full border-primary text-primary">
+									Client Support
 								</Button>
-								<Button class="w-full gold-gradient text-white">
+								<Button href={base + "/contact/#form"} class="w-full gold-gradient text-foreground">
 									Request Quote
 								</Button>
 							</div>

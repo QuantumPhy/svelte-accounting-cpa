@@ -22,82 +22,51 @@
 			date: 'Jan 15',
 			description: 'Fourth quarter estimated tax payment due for individuals and businesses.',
 			category: 'quarterly' as const,
-			daysUntil: 13,
-			urgent: true
 		},
 		{
 			title: 'W-2 and 1099 Distribution',
 			date: 'Jan 31',
 			description: 'Deadline to provide W-2s to employees and 1099s to contractors.',
 			category: 'payroll' as const,
-			daysUntil: 29
 		},
 		{
 			title: 'S-Corp & Partnership Returns',
 			date: 'Mar 15',
 			description: 'Form 1120-S and Form 1065 filing deadline for calendar year entities.',
 			category: 'business' as const,
-			daysUntil: 73
 		},
 		{
 			title: 'Individual Tax Returns',
 			date: 'Apr 15',
 			description: 'Form 1040 filing deadline and Q1 estimated tax payment due.',
 			category: 'individual' as const,
-			daysUntil: 104
 		},
 		{
 			title: 'C-Corp Tax Returns',
 			date: 'Apr 15',
 			description: 'Form 1120 filing deadline for calendar year C corporations.',
 			category: 'business' as const,
-			daysUntil: 104
 		},
 		{
 			title: 'Q2 Estimated Tax Payment',
 			date: 'Jun 15',
 			description: 'Second quarter estimated tax payment due for individuals and businesses.',
 			category: 'quarterly' as const,
-			daysUntil: 165
 		}
 	];
 
 	const resources = [
-		{
-			title: 'Tax Preparation Checklist',
-			description: 'Complete list of documents needed for your tax return preparation.',
-			icon: CheckCircle,
-			type: 'PDF Download',
-			href: '#'
-		},
-		{
-			title: 'Business Expense Guide',
-			description: 'Comprehensive guide to deductible business expenses.',
-			icon: BookOpen,
-			type: 'PDF Download',
-			href: '#'
-		},
-		{
-			title: 'Quarterly Tax Calculator',
-			description: 'Estimate your quarterly tax payments with our interactive tool.',
-			icon: Calculator,
-			type: 'Online Tool',
-			href: '#'
-		},
-		{
-			title: 'Year-End Tax Planning',
-			description: 'Strategies to minimize your tax liability before year end.',
-			icon: FileText,
-			type: 'PDF Download',
-			href: '#'
-		}
+		{ title: 'Gather Your Tax Documents', description: 'Official IRS overview of documents to collect before filing.', icon: CheckCircle, type: 'IRS Guide', href: 'https://www.irs.gov/filing/gather-your-documents' },
+		{ title: 'Business Recordkeeping', description: 'IRS Publication 583 on starting a business and keeping records.', icon: BookOpen, type: 'IRS Guide', href: 'https://www.irs.gov/publications/p583' },
+		{ title: 'Tax Withholding Estimator', description: 'Open the official IRS tool and review its eligibility information.', icon: Calculator, type: 'IRS Tool', href: 'https://www.irs.gov/individuals/tax-withholding-estimator' },
+		{ title: 'Small Business Tax Center', description: 'Official IRS information for small businesses and self-employed people.', icon: FileText, type: 'IRS Guide', href: 'https://www.irs.gov/businesses/small-businesses-self-employed' }
 	];
 
 	const externalLinks = [
 		{ name: 'IRS Website', href: 'https://www.irs.gov', description: 'Official IRS resources and forms' },
 		{ name: 'IRS Where\'s My Refund', href: 'https://www.irs.gov/refunds', description: 'Track your federal refund status' },
 		{ name: 'Social Security Administration', href: 'https://www.ssa.gov', description: 'Benefits and earnings information' },
-		{ name: 'State Tax Agencies', href: '#', description: 'Links to all state revenue departments' }
+		{ name: 'State Tax Agencies', href: 'https://www.irs.gov/businesses/small-businesses-self-employed/state-government-websites', description: 'Links to all state revenue departments' }
 	];
 
 	const taxTips = [
@@ -130,7 +99,7 @@
 	<div class="absolute inset-0 chart-grid opacity-10"></div>
 	<div class="container mx-auto px-4 relative z-10">
 		<div class="max-w-3xl">
-			<span class="inline-flex items-center gap-2 text-accent font-semibold text-sm uppercase tracking-wider mb-4">
+			<span class="inline-flex items-center gap-2 text-amber-300 font-semibold text-sm uppercase tracking-wider mb-4">
 				<Calendar class="h-4 w-4" />
 				Tax Center
 			</span>
@@ -138,9 +107,9 @@
 				Tax Resources & Deadlines
 			</h1>
 			<p class="text-xl text-background/80 mb-8">
-				Stay informed with important tax deadlines, helpful resources, and the latest tax news to keep you prepared year-round.
+				Explore a sample calendar layout and official IRS resource links. Dates and copy are illustrative; verify current requirements with a qualified professional.
 			</p>
-			<Button size="lg" class="gold-gradient text-white hover:opacity-90" href={base + "/contact"}>
+			<Button size="lg" class="gold-gradient text-foreground hover:opacity-90" href={base + "/contact"}>
 				Schedule Tax Consultation
 				<ArrowRight class="ml-2 h-5 w-5" />
 			</Button>
@@ -154,7 +123,7 @@
 		<div class="flex items-center gap-3 mb-8">
 			<AlertTriangle class="h-6 w-6 text-accent" />
 			<h2 class="text-2xl lg:text-3xl font-bold text-foreground">
-				Upcoming Tax Deadlines
+				Sample Tax Calendar
 			</h2>
 		</div>
 
@@ -198,7 +167,7 @@
 							</div>
 							<p class="text-sm text-muted-foreground mb-4">{resource.description}</p>
 							<a href={resource.href} class="inline-flex items-center gap-2 text-primary font-medium text-sm hover:text-primary/80 transition-colors">
-								{resource.type === 'PDF Download' ? 'Download' : 'Access Tool'}
+								Read {resource.title}
 								{#if resource.type === 'PDF Download'}
 									<Download class="h-4 w-4" />
 								{:else}
@@ -276,7 +245,7 @@
 			<Button size="lg" class="bg-white text-primary hover:bg-white/90" href={base + "/contact"}>
 				Get Started Today
 			</Button>
-			<Button size="lg" variant="outline" class="border-white/30 text-white hover:bg-white/10" href="tel:555-234-8200">
+			<Button size="lg" variant="outline" class="bg-transparent border-white/60 text-white hover:bg-white/10 hover:text-white" href="tel:555-234-8200">
 				Call (555) 234-8200
 			</Button>
 		</div>

@@ -20,7 +20,7 @@
 <Card.Root class="relative overflow-hidden group hover:shadow-xl transition-all duration-300 {featured ? 'border-accent ring-2 ring-accent/20' : 'border-border'}">
 	{#if featured}
 		<div class="absolute top-0 right-0">
-			<div class="gold-gradient text-white text-xs font-semibold px-4 py-1 rounded-bl-lg">
+			<div class="gold-gradient text-foreground text-xs font-semibold px-4 py-1 rounded-bl-lg">
 				Popular
 			</div>
 		</div>

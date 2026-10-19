@@ -117,7 +117,7 @@
 	<div class="absolute inset-0 chart-grid opacity-10"></div>
 	<div class="container mx-auto px-4 relative z-10">
 		<div class="max-w-3xl">
-			<span class="inline-flex items-center gap-2 text-accent font-semibold text-sm uppercase tracking-wider mb-4">
+			<span class="inline-flex items-center gap-2 text-amber-300 font-semibold text-sm uppercase tracking-wider mb-4">
 				<Building2 class="h-4 w-4" />
 				Industry Expertise
 			</span>
@@ -127,7 +127,7 @@
 			<p class="text-xl text-background/80 mb-8">
 				Every industry has unique accounting challenges. Our specialized teams bring deep knowledge of your sector's specific requirements, regulations, and opportunities.
 			</p>
-			<Button size="lg" class="gold-gradient text-white hover:opacity-90" href={base + "/contact"}>
+			<Button size="lg" class="gold-gradient text-foreground hover:opacity-90" href={base + "/contact"}>
 				Discuss Your Industry Needs
 				<ArrowRight class="ml-2 h-5 w-5" />
 			</Button>
@@ -196,7 +196,7 @@
 			<Button size="lg" class="bg-white text-primary hover:bg-white/90" href={base + "/contact"}>
 				Contact Us Today
 			</Button>
-			<Button size="lg" variant="outline" class="border-white/30 text-white hover:bg-white/10" href={base + "/services"}>
+			<Button size="lg" variant="outline" class="bg-transparent border-white/60 text-white hover:bg-white/10 hover:text-white" href={base + "/services"}>
 				View All Services
 			</Button>
 		</div>

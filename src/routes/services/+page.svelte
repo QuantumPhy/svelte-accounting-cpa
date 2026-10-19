@@ -115,7 +115,7 @@
 	<div class="absolute inset-0 chart-grid opacity-10"></div>
 	<div class="container mx-auto px-4 relative z-10">
 		<div class="max-w-3xl">
-			<span class="inline-flex items-center gap-2 text-accent font-semibold text-sm uppercase tracking-wider mb-4">
+			<span class="inline-flex items-center gap-2 text-amber-300 font-semibold text-sm uppercase tracking-wider mb-4">
 				<Calculator class="h-4 w-4" />
 				Our Services
 			</span>
@@ -125,7 +125,7 @@
 			<p class="text-xl text-background/80 mb-8">
 				From tax preparation to strategic advisory, we provide the full spectrum of accounting services to help you achieve your financial goals.
 			</p>
-			<Button size="lg" class="gold-gradient text-white hover:opacity-90" href={base + "/contact"}>
+			<Button size="lg" class="gold-gradient text-foreground hover:opacity-90" href={base + "/contact"}>
 				Schedule Free Consultation
 				<ArrowRight class="ml-2 h-5 w-5" />
 			</Button>
@@ -191,7 +191,7 @@
 			<Button size="lg" class="bg-white text-primary hover:bg-white/90" href={base + "/contact"}>
 				Get Started Today
 			</Button>
-			<Button size="lg" variant="outline" class="border-white/30 text-white hover:bg-white/10" href="tel:555-234-8200">
+			<Button size="lg" variant="outline" class="bg-transparent border-white/60 text-white hover:bg-white/10 hover:text-white" href="tel:555-234-8200">
 				Call (555) 234-8200
 			</Button>
 		</div>

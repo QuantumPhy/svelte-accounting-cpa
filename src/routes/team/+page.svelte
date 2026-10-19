@@ -12,7 +12,6 @@
 			imageUrl: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400',
 			bio: 'Robert founded Greenfield & Associates in 1985 with a vision of providing personalized, proactive accounting services. With over 40 years of experience, he continues to lead the firm\'s strategic direction and serves many of our most valued clients.',
 			email: 'robert@greenfieldcpa.com',
-			linkedin: '#',
 			specialties: ['Tax Strategy', 'Business Advisory', 'Estate Planning']
 		},
 		{
@@ -22,7 +21,6 @@
 			imageUrl: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400',
 			bio: 'Margaret joined the firm in 1990 and became partner in 2000. She oversees our audit and assurance practice and brings extensive experience in financial statement preparation and internal controls.',
 			email: 'margaret@greenfieldcpa.com',
-			linkedin: '#',
 			specialties: ['Audit & Assurance', 'Nonprofit Accounting', 'Internal Controls']
 		}
 	];
@@ -35,7 +33,6 @@
 			imageUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400',
 			bio: 'Sarah leads our tax practice with expertise in individual and corporate taxation. She specializes in multi-state tax compliance and tax planning for high-net-worth individuals.',
 			email: 'sarah@greenfieldcpa.com',
-			linkedin: '#',
 			specialties: ['Tax Planning', 'Multi-State Tax', 'High-Net-Worth']
 		},
 		{
@@ -45,7 +42,6 @@
 			imageUrl: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400',
 			bio: 'Michael leads our audit engagements with a focus on manufacturing and distribution companies. He brings 15 years of experience in financial statement audits.',
 			email: 'michael@greenfieldcpa.com',
-			linkedin: '#',
 			specialties: ['Financial Audits', 'Manufacturing', 'Internal Controls']
 		},
 		{
@@ -55,7 +51,6 @@
 			imageUrl: 'https://images.unsplash.com/photo-1598550874175-4d0ef436c909?w=400',
 			bio: 'Jennifer heads our business advisory services, helping clients with strategic planning, M&A transactions, and operational improvements.',
 			email: 'jennifer@greenfieldcpa.com',
-			linkedin: '#',
 			specialties: ['Business Advisory', 'M&A', 'Strategic Planning']
 		}
 	];
@@ -68,7 +63,6 @@
 			imageUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400',
 			bio: 'David specializes in small business taxation and helps entrepreneurs navigate the complexities of business ownership.',
 			email: 'david@greenfieldcpa.com',
-			linkedin: '#',
 			specialties: ['Small Business', 'S-Corps', 'Partnerships']
 		},
 		{
@@ -78,7 +72,6 @@
 			imageUrl: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400',
 			bio: 'Emily provides bookkeeping and payroll services to our small business clients. She\'s a QuickBooks ProAdvisor and helps clients optimize their accounting systems.',
 			email: 'emily@greenfieldcpa.com',
-			linkedin: '#',
 			specialties: ['Bookkeeping', 'QuickBooks', 'Payroll']
 		},
 		{
@@ -88,7 +81,6 @@
 			imageUrl: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400',
 			bio: 'James prepares individual and business tax returns with a focus on accuracy and maximizing deductions for our clients.',
 			email: 'james@greenfieldcpa.com',
-			linkedin: '#',
 			specialties: ['Tax Preparation', 'Individual Returns', 'Schedule C']
 		},
 		{
@@ -98,7 +90,6 @@
 			imageUrl: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400',
 			bio: 'Lisa supports our audit and assurance team. She\'s currently pursuing her CPA license and brings fresh perspectives to our engagements.',
 			email: 'lisa@greenfieldcpa.com',
-			linkedin: '#',
 			specialties: ['Audit Support', 'Bookkeeping', 'Financial Analysis']
 		}
 	];
@@ -132,7 +123,7 @@
 	<div class="absolute inset-0 chart-grid opacity-10"></div>
 	<div class="container mx-auto px-4 relative z-10">
 		<div class="max-w-3xl">
-			<span class="inline-flex items-center gap-2 text-accent font-semibold text-sm uppercase tracking-wider mb-4">
+			<span class="inline-flex items-center gap-2 text-amber-300 font-semibold text-sm uppercase tracking-wider mb-4">
 				<Users class="h-4 w-4" />
 				Our Team
 			</span>

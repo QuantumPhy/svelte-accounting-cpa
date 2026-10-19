@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { Button } from '$lib/components/ui/button';
 	import { ChevronRight, Calculator, Shield, Award, TrendingUp } from 'lucide-svelte';
 
@@ -62,11 +63,11 @@
 
 			<!-- CTAs -->
 			<div class="flex flex-col sm:flex-row gap-4 mb-12">
-				<Button size="lg" class="gold-gradient text-white hover:opacity-90 text-lg px-8 py-6">
+				<Button href={base + "/contact/#form"} size="lg" class="gold-gradient text-foreground hover:opacity-90 text-lg px-8 py-6">
 					{primaryCta}
 					<ChevronRight class="ml-2 h-5 w-5" />
 				</Button>
-				<Button size="lg" variant="outline" class="border-white/30 text-white hover:bg-white/10 text-lg px-8 py-6">
+				<Button href={base + "/services/"} size="lg" variant="outline" class="bg-transparent border-white/60 text-white hover:bg-white/10 hover:text-white text-lg px-8 py-6">
 					{secondaryCta}
 				</Button>
 			</div>

@@ -34,11 +34,11 @@
 				<!-- Certifications -->
 				<div class="flex flex-wrap gap-3 mt-4">
 					<div class="flex items-center gap-1.5 bg-background/10 px-3 py-1.5 rounded-full">
-						<Award class="h-4 w-4 text-accent" />
+						<Award class="h-4 w-4 text-amber-300" />
 						<span class="text-xs font-medium text-background/80">CPA Certified</span>
 					</div>
 					<div class="flex items-center gap-1.5 bg-background/10 px-3 py-1.5 rounded-full">
-						<ShieldCheck class="h-4 w-4 text-accent" />
+						<ShieldCheck class="h-4 w-4 text-amber-300" />
 						<span class="text-xs font-medium text-background/80">QuickBooks ProAdvisor</span>
 					</div>
 				</div>
@@ -49,59 +49,59 @@
 				<h3 class="text-lg font-semibold mb-4 text-white">Our Services</h3>
 				<ul class="space-y-3">
 					<li>
-						<a href={base + "/services"} class="text-background/70 hover:text-accent transition-colors text-sm">
+						<a href={base + "/services"} class="text-background/70 hover:text-amber-300 transition-colors text-sm">
 							Tax Preparation & Planning
 						</a>
 					</li>
 					<li>
-						<a href={base + "/services"} class="text-background/70 hover:text-accent transition-colors text-sm">
+						<a href={base + "/services"} class="text-background/70 hover:text-amber-300 transition-colors text-sm">
 							Bookkeeping Services
 						</a>
 					</li>
 					<li>
-						<a href={base + "/services"} class="text-background/70 hover:text-accent transition-colors text-sm">
+						<a href={base + "/services"} class="text-background/70 hover:text-amber-300 transition-colors text-sm">
 							Payroll Management
 						</a>
 					</li>
 					<li>
-						<a href={base + "/services"} class="text-background/70 hover:text-accent transition-colors text-sm">
+						<a href={base + "/services"} class="text-background/70 hover:text-amber-300 transition-colors text-sm">
 							Audit & Assurance
 						</a>
 					</li>
 					<li>
-						<a href={base + "/services"} class="text-background/70 hover:text-accent transition-colors text-sm">
+						<a href={base + "/services"} class="text-background/70 hover:text-amber-300 transition-colors text-sm">
 							Business Advisory
 						</a>
 					</li>
 					<li>
-						<a href={base + "/services"} class="text-background/70 hover:text-accent transition-colors text-sm">
+						<a href={base + "/services"} class="text-background/70 hover:text-amber-300 transition-colors text-sm">
 							CFO Services
 						</a>
 					</li>
 				</ul>
 			</div>
 
-			<!-- Tax Deadlines -->
+			<!-- Sample Tax Calendar -->
 			<div>
 				<h3 class="text-lg font-semibold mb-4 text-white flex items-center gap-2">
-					<Calendar class="h-5 w-5 text-accent" />
-					Tax Deadlines
+					<Calendar class="h-5 w-5 text-amber-300" />
+					Sample Tax Calendar
 				</h3>
 				<ul class="space-y-3">
 					<li class="bg-background/5 rounded-lg p-3">
-						<p class="text-accent font-semibold text-sm">January 15</p>
+						<p class="text-amber-300 font-semibold text-sm">January 15</p>
 						<p class="text-background/70 text-xs">Q4 Estimated Tax Payment</p>
 					</li>
 					<li class="bg-background/5 rounded-lg p-3">
-						<p class="text-accent font-semibold text-sm">April 15</p>
+						<p class="text-amber-300 font-semibold text-sm">April 15</p>
 						<p class="text-background/70 text-xs">Individual Tax Returns Due</p>
 					</li>
 					<li class="bg-background/5 rounded-lg p-3">
-						<p class="text-accent font-semibold text-sm">March 15</p>
+						<p class="text-amber-300 font-semibold text-sm">March 15</p>
 						<p class="text-background/70 text-xs">S-Corp & Partnership Returns</p>
 					</li>
 				</ul>
-				<a href={base + "/tax-center"} class="inline-flex items-center gap-1 text-accent hover:text-accent/80 text-sm font-medium mt-3 transition-colors">
+				<a href={base + "/tax-center"} class="inline-flex items-center gap-1 text-amber-300 hover:text-amber-300/80 text-sm font-medium mt-3 transition-colors">
 					View Full Calendar
 					<svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -114,7 +114,7 @@
 				<h3 class="text-lg font-semibold mb-4 text-white">Contact Us</h3>
 				<ul class="space-y-4">
 					<li class="flex items-start gap-3">
-						<MapPin class="h-5 w-5 text-accent mt-0.5" />
+						<MapPin class="h-5 w-5 text-amber-300 mt-0.5" />
 						<span class="text-background/70 text-sm">
 							456 Financial District<br />
 							Suite 200<br />
@@ -122,19 +122,19 @@
 						</span>
 					</li>
 					<li class="flex items-center gap-3">
-						<Phone class="h-5 w-5 text-accent" />
-						<a href="tel:555-234-8200" class="text-background/70 hover:text-accent transition-colors text-sm">
+						<Phone class="h-5 w-5 text-amber-300" />
+						<a href="tel:555-234-8200" class="text-background/70 hover:text-amber-300 transition-colors text-sm">
 							(555) 234-8200
 						</a>
 					</li>
 					<li class="flex items-center gap-3">
-						<Mail class="h-5 w-5 text-accent" />
-						<a href="mailto:info@greenfieldcpa.com" class="text-background/70 hover:text-accent transition-colors text-sm">
+						<Mail class="h-5 w-5 text-amber-300" />
+						<a href="mailto:info@greenfieldcpa.com" class="text-background/70 hover:text-amber-300 transition-colors text-sm">
 							info@greenfieldcpa.com
 						</a>
 					</li>
 					<li class="flex items-start gap-3">
-						<Clock class="h-5 w-5 text-accent mt-0.5" />
+						<Clock class="h-5 w-5 text-amber-300 mt-0.5" />
 						<span class="text-background/70 text-sm">
 							Mon-Fri: 8:00 AM - 6:00 PM<br />
 							Sat: By Appointment<br />
@@ -145,9 +145,10 @@
 			</div>
 		</div>
 
+		<p class="mt-8 text-sm text-background/80">Sample accounting practice. Names, credentials, testimonials, savings and dates illustrate the design; replace and verify them before publishing. This preview does not provide accounting advice or a client portal.</p>
 		<!-- Bottom Bar -->
 		<div class="border-t border-background/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-			<p class="text-background/50 text-sm">
+			<p class="text-background/70 text-sm">
 				&copy; {new Date().getFullYear()} Greenfield & Associates CPA. All rights reserved.
 			</p>
 		</div>

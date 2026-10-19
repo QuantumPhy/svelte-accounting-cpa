@@ -1,6 +1,6 @@
 # Accounting Cpa
 
-A modern SvelteKit template built with love by the CoCoding AI team.
+A six-page accounting practice template by Cocoding AI.
 
 ![CoCoding AI](https://img.shields.io/badge/Built%20with-CoCoding%20AI-blue)
 ![SvelteKit](https://img.shields.io/badge/SvelteKit-FF3E00?logo=svelte&logoColor=white)
@@ -24,7 +24,7 @@ This project is the property of **CoCoding AI** - Your AI-Powered Development Pa
 
 ### Prerequisites
 
-- Node.js 18+
+- Node.js 24
 - pnpm (recommended)
 
 ### Installation
@@ -78,3 +78,11 @@ See the [LICENSE](LICENSE) file for details.
 Built with ❤️ by the **CoCoding AI Team**
 
 [https://cocoding.ai](https://cocoding.ai)
+
+## Static delivery and customization
+
+All six routes are rendered and prerendered, including direct navigation under the validated `COCODING_TEMPLATE_BASE`. There is no SPA fallback. Jenkins performs installation, build, security and isolated desktop/mobile browser checks; do not treat startup alone as delivery evidence.
+
+The practice, staff, credentials, testimonials, savings, contact details and calendar entries are sample content. Replace and professionally verify them before publishing. Calendar examples are not current filing advice; the resource cards link to named official IRS pages instead of nonexistent downloads. The inquiry form only displays an honest local demonstration result and sends/stores nothing. Client Support explains that no secure portal is connected. Configure real services and a privacy policy before receiving customer information.
+
+The distributed customer source package includes the versioned `COCODING-TEMPLATE-LICENSE.txt` business/client grant and origin notice. Competing redistribution is restricted; ordinary use in development/generation tools for permitted end products is allowed. Existing third-party notices remain in force.

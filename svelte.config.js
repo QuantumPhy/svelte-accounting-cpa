@@ -9,7 +9,7 @@ if (base && !/^\/(?:[a-z0-9-]+\/)*[a-z0-9-]+$/.test(base)) {
 const config = {
 	preprocess: vitePreprocess(),
 	kit: {
-		adapter: adapter({ fallback: 'index.html' }),
+		adapter: adapter(),
 		paths: {
 			base,
 			relative: false

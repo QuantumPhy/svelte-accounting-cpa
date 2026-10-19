@@ -61,9 +61,9 @@
 		},
 		{
 			icon: FileText,
-			title: 'Client Portal',
-			description: 'Access your documents securely',
-			href: '#'
+			title: 'Client Support',
+			description: 'Learn how to configure client access',
+			href: '#client-support'
 		},
 		{
 			icon: MessageSquare,
@@ -92,17 +92,11 @@
 		message: ''
 	});
 
-	let isSubmitting = $state(false);
+	let previewMessage = $state('');
 
-	async function handleSubmit(e: Event) {
+	function handleSubmit(e: Event) {
 		e.preventDefault();
-		isSubmitting = true;
-		// Simulate form submission
-		await new Promise(resolve => setTimeout(resolve, 1000));
-		isSubmitting = false;
-		// Reset form
-		formData = { name: '', email: '', phone: '', company: '', subject: '', message: '' };
-		alert('Thank you for your inquiry! We will contact you within 24 hours.');
+		previewMessage = 'This is a form demonstration. Your message has not been sent or stored. Connect your own secure form service before publishing.';
 	}
 </script>
 
@@ -116,7 +110,7 @@
 	<div class="absolute inset-0 chart-grid opacity-10"></div>
 	<div class="container mx-auto px-4 relative z-10">
 		<div class="max-w-3xl">
-			<span class="inline-flex items-center gap-2 text-accent font-semibold text-sm uppercase tracking-wider mb-4">
+			<span class="inline-flex items-center gap-2 text-amber-300 font-semibold text-sm uppercase tracking-wider mb-4">
 				<MessageSquare class="h-4 w-4" />
 				Contact Us
 			</span>
@@ -177,7 +171,7 @@
 					Request a Free Consultation
 				</h2>
 				<p class="text-muted-foreground mb-8">
-					Fill out the form below and one of our CPAs will contact you within 24 hours to discuss your needs.
+					Try the sample inquiry form. No information is sent or stored by this template.
 				</p>
 
 				<form onsubmit={handleSubmit} class="space-y-6">
@@ -241,7 +235,7 @@
 							Service Interested In
 						</Label>
 						<Select.Root type="single" onValueChange={(v) => formData.subject = v || ''}>
-							<Select.Trigger>
+							<Select.Trigger id="subject" aria-label="Service interested in">
 								<span>{formData.subject ? serviceOptions.find(o => o.value === formData.subject)?.label : 'Select a service...'}</span>
 							</Select.Trigger>
 							<Select.Content>
@@ -270,31 +264,31 @@
 
 					<div class="bg-secondary/50 rounded-lg p-4">
 						<p class="text-sm text-muted-foreground">
-							By submitting this form, you agree to our privacy policy. We will never share your information with third parties.
+							Demonstration only. Do not enter confidential documents or financial information. Connect your own privacy policy and secure inquiry service before publishing.
 						</p>
 					</div>
 
 					<Button
 						type="submit"
 						size="lg"
-						class="w-full sm:w-auto gold-gradient text-white hover:opacity-90"
-						disabled={isSubmitting}
+						class="w-full sm:w-auto gold-gradient text-foreground hover:opacity-90"
 					>
-						{#if isSubmitting}
-							Sending...
-						{:else}
-							Submit Request
-							<Send class="ml-2 h-5 w-5" />
-						{/if}
+						Preview Request
+						<Send class="ml-2 h-5 w-5" />
 					</Button>
 				</form>
+				<p role="status" class="mt-4 text-sm text-foreground">{previewMessage}</p>
 			</div>
 
 			<!-- Map & Quick Links -->
 			<div class="space-y-8">
+				<section id="client-support" class="rounded-xl border border-border p-6">
+					<h2 class="text-xl font-semibold mb-3">Client Support</h2>
+					<p class="text-muted-foreground">This sample site does not connect to a client portal. Configure your own secure service and replace these contact details before publishing. Never send sensitive financial records through this demonstration.</p>
+				</section>
 				<!-- Map -->
 				<Card.Root class="overflow-hidden border-0 shadow-lg">
-					<div class="aspect-video bg-secondary relative">
+					<div id="map" class="aspect-video bg-secondary relative">
 						<img
 							src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800"
 							alt="Financial district office building"
@@ -395,7 +389,7 @@
 			<Button size="lg" class="bg-white text-primary hover:bg-white/90" href="#form">
 				Request Consultation
 			</Button>
-			<Button size="lg" variant="outline" class="border-white/30 text-white hover:bg-white/10" href="tel:555-234-8200">
+			<Button size="lg" variant="outline" class="bg-transparent border-white/60 text-white hover:bg-white/10 hover:text-white" href="tel:555-234-8200">
 				Call (555) 234-8200
 			</Button>
 		</div>
