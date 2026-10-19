@@ -14,7 +14,7 @@
 
 	let {
 		title = 'Your Trusted Financial Partner',
-		subtitle = 'Greenfield & Associates CPA',
+		subtitle = 'Greenfield & Associates · Sample Practice',
 		description = 'Expert accounting, tax planning, and business advisory services. We help individuals and businesses achieve financial success with personalized strategies and proactive guidance.',
 		primaryCta = 'Request Quote',
 		secondaryCta = 'Our Services',
@@ -22,13 +22,13 @@
 	}: Props = $props();
 
 	const stats = [
-		{ icon: Shield, value: '40+', label: 'Years Experience' },
-		{ icon: Award, value: '2,500+', label: 'Clients Served' },
-		{ icon: TrendingUp, value: '$50M+', label: 'Tax Savings' }
+		{ icon: Shield, value: '6', label: 'Core Services' },
+		{ icon: Award, value: '6', label: 'Industry Highlights' },
+		{ icon: TrendingUp, value: '3', label: 'Team Highlights' }
 	];
 </script>
 
-<section class="relative min-h-[90vh] flex items-center overflow-hidden">
+<section class="relative min-h-[90vh] flex flex-col justify-center overflow-hidden">
 	<!-- Background Image -->
 	<div class="absolute inset-0">
 		<img
@@ -43,7 +43,7 @@
 	<div class="absolute inset-0 chart-grid opacity-20"></div>
 
 	<!-- Content -->
-	<div class="container mx-auto px-4 relative z-10">
+	<div class="container mx-auto px-4 py-16 lg:py-24 relative z-10">
 		<div class="max-w-3xl">
 			<!-- Badge -->
 			<div class="inline-flex items-center gap-2 bg-primary/20 backdrop-blur-sm text-white px-4 py-2 rounded-full mb-6">
@@ -77,7 +77,7 @@
 				{#each stats as stat}
 					<div class="text-center md:text-left">
 						<div class="flex items-center justify-center md:justify-start gap-2 mb-2">
-							<stat.icon class="h-5 w-5 text-accent" />
+							<stat.icon class="h-5 w-5 text-amber-300" />
 							<span class="text-2xl md:text-3xl font-bold text-white number-ticker">{stat.value}</span>
 						</div>
 						<span class="text-sm text-white/60">{stat.label}</span>
@@ -88,29 +88,23 @@
 	</div>
 
 	<!-- Trust Indicators -->
-	<div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-background/20 to-transparent py-8">
+	<div class="relative z-10 w-full bg-foreground/80 py-6">
 		<div class="container mx-auto px-4">
 			<div class="flex flex-wrap items-center justify-center gap-8 text-white/60 text-sm">
 				<div class="flex items-center gap-2">
-					<Award class="h-5 w-5 text-accent" />
-					<span>CPA Certified</span>
+					<Award class="h-5 w-5 text-amber-300" />
+					<span>Sample CPA Credential</span>
 				</div>
 				<div class="flex items-center gap-2">
-					<Shield class="h-5 w-5 text-accent" />
-					<span>QuickBooks ProAdvisor</span>
+					<Shield class="h-5 w-5 text-amber-300" />
+					<span>Sample Advisor Credential</span>
 				</div>
 				<div class="flex items-center gap-2">
-					<Award class="h-5 w-5 text-accent" />
-					<span>AICPA Member</span>
+					<Award class="h-5 w-5 text-amber-300" />
+					<span>Sample Membership Badge</span>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<!-- Scroll Indicator -->
-	<div class="absolute bottom-24 left-1/2 -translate-x-1/2 animate-bounce hidden md:block">
-		<div class="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center pt-2">
-			<div class="w-1.5 h-3 bg-white/50 rounded-full animate-pulse"></div>
-		</div>
-	</div>
 </section>
