@@ -69,12 +69,12 @@
 				Email
 			</a>
 		{/if}
-		{#if linkedin}
+		{#if linkedin && linkedin !== '#'}
 			<a
 				href={linkedin}
 				target="_blank"
 				rel="noopener noreferrer"
-				class="flex-1 flex items-center justify-center gap-2 py-2 px-3 rounded-lg bg-[#0077b5]/10 text-[#0077b5] hover:bg-[#0077b5] hover:text-white transition-colors text-sm font-medium"
+				class="flex-1 flex items-center justify-center gap-2 py-2 px-3 rounded-lg bg-[#0077b5]/10 text-[#005582] hover:bg-[#0077b5] hover:text-white transition-colors text-sm font-medium"
 			>
 				<Linkedin class="h-4 w-4" />
 				LinkedIn

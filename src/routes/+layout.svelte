@@ -6,14 +6,11 @@
 	let { children } = $props();
 </script>
 
-<svelte:head>
-	<title>Greenfield & Associates CPA - Your Trusted Financial Partner</title>
-	<meta name="description" content="Expert accounting, tax preparation, and business advisory services. Greenfield & Associates CPA has been helping individuals and businesses achieve financial success for over 40 years." />
-</svelte:head>
 
 <div class="min-h-screen flex flex-col">
+	<a class="skip-link" href="#main-content">Skip to content</a>
 	<Header />
-	<main class="flex-1">
+	<main id="main-content" class="flex-1">
 		{@render children()}
 	</main>
 	<Footer />

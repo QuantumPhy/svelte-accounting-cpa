@@ -88,7 +88,6 @@
 			imageUrl: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400',
 			bio: 'Over 30 years of experience in public accounting, specializing in tax strategy and business advisory services.',
 			email: 'robert@greenfieldcpa.com',
-			linkedin: '#',
 			specialties: ['Tax Strategy', 'Business Advisory']
 		},
 		{
@@ -98,7 +97,6 @@
 			imageUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400',
 			bio: 'Expert in individual and corporate taxation with a focus on tax planning and multi-state compliance.',
 			email: 'sarah@greenfieldcpa.com',
-			linkedin: '#',
 			specialties: ['Tax Planning', 'Multi-State Tax']
 		},
 		{
@@ -108,7 +106,6 @@
 			imageUrl: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400',
 			bio: 'Leads our audit practice with extensive experience in financial statement audits and internal controls.',
 			email: 'michael@greenfieldcpa.com',
-			linkedin: '#',
 			specialties: ['Financial Audits', 'Internal Controls']
 		}
 	];
@@ -119,22 +116,18 @@
 			date: 'Jan 15',
 			description: 'Fourth quarter estimated tax payment due for individuals and businesses.',
 			category: 'quarterly' as const,
-			daysUntil: 13,
-			urgent: true
 		},
 		{
 			title: 'W-2 and 1099 Distribution',
 			date: 'Jan 31',
 			description: 'Deadline to provide W-2s to employees and 1099s to contractors.',
 			category: 'payroll' as const,
-			daysUntil: 29
 		},
 		{
 			title: 'S-Corp & Partnership Returns',
 			date: 'Mar 15',
 			description: 'Form 1120-S and Form 1065 filing deadline.',
 			category: 'business' as const,
-			daysUntil: 73
 		}
 	];
 
@@ -185,6 +178,11 @@
 		}
 	];
 </script>
+
+<svelte:head>
+	<title>Greenfield &amp; Associates CPA — Accounting Practice Template</title>
+	<meta name="description" content="Explore a six-page accounting practice design with services, industries, team profiles, sample tax resources and a contact-form demonstration." />
+</svelte:head>
 
 <!-- Hero Section -->
 <HeroSection />
@@ -247,7 +245,7 @@
 
 	<div class="container mx-auto px-4 relative z-10">
 		<div class="text-center max-w-3xl mx-auto mb-12">
-			<span class="text-accent font-semibold text-sm uppercase tracking-wider">Industry Expertise</span>
+			<span class="text-amber-300 font-semibold text-sm uppercase tracking-wider">Industry Expertise</span>
 			<h2 class="text-3xl lg:text-4xl font-bold text-white mt-2 mb-4">
 				Specialized Industry Knowledge
 			</h2>
@@ -268,7 +266,7 @@
 		</div>
 
 		<div class="text-center mt-10">
-			<Button class="gold-gradient text-white hover:opacity-90" href={base + "/industries"}>
+			<Button class="gold-gradient text-foreground hover:opacity-90" href={base + "/industries"}>
 				Explore All Industries
 				<ArrowRight class="ml-2 h-4 w-4" />
 			</Button>
@@ -349,7 +347,7 @@
 			<div>
 				<span class="text-primary font-semibold text-sm uppercase tracking-wider">Stay Informed</span>
 				<h2 class="text-3xl lg:text-4xl font-bold text-foreground mt-2">
-					Upcoming Tax Deadlines
+					Sample Tax Calendar
 				</h2>
 			</div>
 			<Button variant="outline" class="self-start lg:self-auto border-primary text-primary hover:bg-primary hover:text-primary-foreground" href={base + "/tax-center"}>
@@ -381,7 +379,7 @@
 			<Button size="lg" class="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6" href={base + "/contact"}>
 				Free Consultation
 			</Button>
-			<Button size="lg" variant="outline" class="border-white/30 text-white hover:bg-white/10 text-lg px-8 py-6" href={base + "/services"}>
+			<Button size="lg" variant="outline" class="bg-transparent border-white/60 text-white hover:bg-white/10 hover:text-white text-lg px-8 py-6" href={base + "/services"}>
 				Explore Services
 			</Button>
 		</div>
