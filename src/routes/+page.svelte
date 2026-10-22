@@ -1,12 +1,12 @@
 <script lang="ts">
-	import { base } from '$app/paths';
-	import { Button } from '$lib/components/ui/button';
-	import * as Card from '$lib/components/ui/card';
-	import { Badge } from '$lib/components/ui/badge';
-	import HeroSection from '$lib/components/HeroSection.svelte';
-	import ServiceCard from '$lib/components/ServiceCard.svelte';
-	import TeamMemberCard from '$lib/components/TeamMemberCard.svelte';
-	import TaxDeadlineCard from '$lib/components/TaxDeadlineCard.svelte';
+	import { base } from '#lib/template-base.js';
+	import { Button } from '#lib/components/ui/button/index.js';
+	import * as Card from '#lib/components/ui/card/index.js';
+	import { Badge } from '#lib/components/ui/badge/index.js';
+	import HeroSection from '#lib/components/HeroSection.svelte';
+	import ServiceCard from '#lib/components/ServiceCard.svelte';
+	import TeamMemberCard from '#lib/components/TeamMemberCard.svelte';
+	import TaxDeadlineCard from '#lib/components/TaxDeadlineCard.svelte';
 	import {
 		Calculator,
 		FileText,

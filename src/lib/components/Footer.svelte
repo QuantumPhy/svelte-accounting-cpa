@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { base } from '$app/paths';
+	import { base } from '#lib/template-base.js';
 	import { Calculator, Phone, Mail, MapPin, Clock, Award, ShieldCheck, Calendar } from 'lucide-svelte';
 </script>
 

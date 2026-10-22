@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { base } from '$app/paths';
-	import { Button } from '$lib/components/ui/button';
-	import * as Card from '$lib/components/ui/card';
-	import ServiceCard from '$lib/components/ServiceCard.svelte';
+	import { base } from '#lib/template-base.js';
+	import { Button } from '#lib/components/ui/button/index.js';
+	import * as Card from '#lib/components/ui/card/index.js';
+	import ServiceCard from '#lib/components/ServiceCard.svelte';
 	import {
 		FileText,
 		BookOpen,

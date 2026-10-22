@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { base } from '$app/paths';
-	import * as Card from '$lib/components/ui/card';
+	import { base } from '#lib/template-base.js';
+	import * as Card from '#lib/components/ui/card/index.js';
 	import { Calendar, Clock, AlertTriangle, ChevronRight } from 'lucide-svelte';
 
 	interface Props {

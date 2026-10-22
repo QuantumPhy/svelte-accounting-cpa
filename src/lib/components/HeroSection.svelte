@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { base } from '$app/paths';
-	import { Button } from '$lib/components/ui/button';
+	import { base } from '#lib/template-base.js';
+	import { Button } from '#lib/components/ui/button/index.js';
 	import { ChevronRight, Calculator, Shield, Award, TrendingUp } from 'lucide-svelte';
 
 	interface Props {

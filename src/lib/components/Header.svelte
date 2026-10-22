@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { templateHref } from '$lib/preview-path';
-	import { base } from '$app/paths';
-	import { Button } from '$lib/components/ui/button';
-	import * as Sheet from '$lib/components/ui/sheet';
+	import { templateHref } from '#lib/preview-path.js';
+	import { base } from '#lib/template-base.js';
+	import { Button } from '#lib/components/ui/button/index.js';
+	import * as Sheet from '#lib/components/ui/sheet/index.js';
 	import { Calculator, Menu, Phone, Clock, MapPin, BarChart3 } from 'lucide-svelte';
 
 	let isScrolled = $state(false);

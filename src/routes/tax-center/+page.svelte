@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { templateHref } from '$lib/preview-path';
-	import { base } from '$app/paths';
-	import { Button } from '$lib/components/ui/button';
-	import * as Card from '$lib/components/ui/card';
-	import TaxDeadlineCard from '$lib/components/TaxDeadlineCard.svelte';
+	import { templateHref } from '#lib/preview-path.js';
+	import { base } from '#lib/template-base.js';
+	import { Button } from '#lib/components/ui/button/index.js';
+	import * as Card from '#lib/components/ui/card/index.js';
+	import TaxDeadlineCard from '#lib/components/TaxDeadlineCard.svelte';
 	import {
 		Calendar,
 		FileText,

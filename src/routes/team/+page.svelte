@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { base } from '$app/paths';
-	import { Button } from '$lib/components/ui/button';
-	import TeamMemberCard from '$lib/components/TeamMemberCard.svelte';
+	import { base } from '#lib/template-base.js';
+	import { Button } from '#lib/components/ui/button/index.js';
+	import TeamMemberCard from '#lib/components/TeamMemberCard.svelte';
 	import { Users, ArrowRight, Award, GraduationCap, Heart } from 'lucide-svelte';
 
 	const leadership = [

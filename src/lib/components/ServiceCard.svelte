@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { templateHref } from '$lib/preview-path';
-	import * as Card from '$lib/components/ui/card';
-	import { Button } from '$lib/components/ui/button';
+	import { templateHref } from '#lib/preview-path.js';
+	import * as Card from '#lib/components/ui/card/index.js';
+	import { Button } from '#lib/components/ui/button/index.js';
 	import { ChevronRight, Check } from 'lucide-svelte';
 	import type { ComponentType } from 'svelte';
 

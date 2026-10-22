@@ -1,7 +1,8 @@
 <script lang="ts">
-	import * as Card from '$lib/components/ui/card';
-	import { Badge } from '$lib/components/ui/badge';
-	import { Mail, Linkedin } from 'lucide-svelte';
+	import * as Card from '#lib/components/ui/card/index.js';
+	import { Badge } from '#lib/components/ui/badge/index.js';
+	import { Mail } from 'lucide-svelte';
+import { Linkedin } from '../icons/cocoding-brands/index.js';
 
 	interface Props {
 		name: string;
