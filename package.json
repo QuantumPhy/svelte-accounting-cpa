@@ -20,7 +20,7 @@
     "@sveltejs/kit": "^3.1.0",
     "@sveltejs/vite-plugin-svelte": "^7.3.1",
     "@tailwindcss/vite": "^4.3.3",
-    "@tanstack/table-core": "^8.21.3",
+    "@tanstack/table-core": "^9.3.1",
     "embla-carousel-svelte": "^8.6.0",
     "formsnap": "^2.1.0",
     "layerchart": "2.8.1",
